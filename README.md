@@ -12,3 +12,6 @@
     }
   }
 ```
+
+## 參考資料
+[font-awesome設定](https://rogeraabbccdd.github.io/F2E-book/views/ch24.html#font-awesome)
