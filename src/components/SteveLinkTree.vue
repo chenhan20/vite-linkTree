@@ -22,6 +22,12 @@ const TreeDataList = [
   {'name':'SteveBot','url':'https://t.me/stevechuang_bot',icon:['fab', 'telegram']},
 ]
 
+
+// functions
+function handleClick(url) {
+  window.open(url)
+}
+
 </script>
 
 <template>
@@ -37,7 +43,7 @@ const TreeDataList = [
                 <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
             </div>
         </div>
-        <div v-for="item in TreeDataList" class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-6 cursor-pointer hover:shadow-lg hover:border-transparent">
+        <div v-for="item in TreeDataList" class="p-5 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-6 cursor-pointer hover:shadow-lg hover:border-transparent" @click="handleClick(item.url)">
             <div class="shrink-0">
               <div class="">
                   <font-awesome-icon :icon="item.icon" size="2xl" />
