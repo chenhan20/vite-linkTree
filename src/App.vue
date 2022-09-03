@@ -1,13 +1,14 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import SteveLinkTree from './components/SteveLinkTree.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import SteveLinkTree from './components/SteveLinkTree.vue'
 /* import the fontawesome core */
 </script>
 
+<!-- <HelloWorld msg="Welcome to Steve Page"/q> -->
 <template>
-<SteveLinkTree msg="Welcome to Steve LinkTree"/>
+  <router-view/>
 </template>
 
 <style>

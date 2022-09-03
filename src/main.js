@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
+import router from './router'
+
+
 // 必要引用
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -16,5 +19,5 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebook, faInstagram, faYoutube, faAddressCard, faLinkedin, faGithub, faTelegram);
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
+createApp(App).use(router).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
 
