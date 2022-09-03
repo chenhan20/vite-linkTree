@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 import './index.css'
 import router from './router'
@@ -17,7 +18,9 @@ import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
-library.add(faFacebook, faInstagram, faYoutube, faAddressCard, faLinkedin, faGithub, faTelegram);
+library.add(faFacebook, faInstagram, faYoutube, faAddressCard, faLinkedin, faGithub, faTelegram)
 
-createApp(App).use(router).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
+const pinia = createPinia()
+
+createApp(App).use(router).use(pinia).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
 

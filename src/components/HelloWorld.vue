@@ -10,6 +10,7 @@ const count = ref(0)
 
 <template>
   <h1> Steve Home Page</h1>
+  <router-link to="/steveLinkTree">Go to SteveLinkTree</router-link>
 </template>
 
 <style scoped>

@@ -11,7 +11,6 @@ defineProps({
 });
 
 const imageUrl = new URL('../assets/steve01.jpg', import.meta.url).href
-
 const count = ref(0);
 
 const TreeDataList = [
@@ -95,6 +94,15 @@ function handleClick(url) {
       <div>
         <div class="text-xl font-medium text-black">{{ item.name }}</div>
       </div>
+    </div>
+    <div class="flex-col space-y-4">
+      <router-link to="/">
+        <div
+          class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-6"
+          >
+          ⬅ Back Home
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
