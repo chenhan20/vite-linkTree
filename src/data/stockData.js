@@ -1,6 +1,4 @@
-import { defineStore } from "pinia";
-
-export const useUserStore = defineStore({
+export default {
   "stat": "OK",
   "title": "111年08月 發行量加權股價指數歷史資料",
   "date": "20220801",
@@ -31,4 +29,3 @@ export const useUserStore = defineStore({
     ["111/08/31", "14,912.12", "15,095.44", "14,874.33", "15,095.44"]
   ]
 }
-)
