@@ -20,7 +20,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebook, faInstagram, faYoutube, faAddressCard, faLinkedin, faGithub, faTelegram)
 
-const pinia = createPinia()
 
+// pinia
+const pinia = createPinia()
 createApp(App).use(router).use(pinia).component("font-awesome-icon", FontAwesomeIcon).mount('#app')
 
