@@ -11,7 +11,7 @@ const imageUrl = new URL("../assets/steve01.jpg", import.meta.url).href;
 </script>
 
 <template>
-  <div class="bg-cover bg-center ...">
+  <div class="bg-cover bg-center">
     <h1>Steve Home Page</h1>
     <div v-for="router in router.getRoutes()">
       <router-link :to="router.path">
